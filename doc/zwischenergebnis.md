@@ -11,7 +11,7 @@ Beschreiben Sie kurz, für welche Organisation Sie eine Website entwerfen wollen
 - Wissensvermittlung
 (Stichpunkte löschen)
 
-Das Tierheim "Name e.V." setzt sich für hilfsbedürftige Tiere ein. Ein engagiertes Team von Pflegern und Freiwilligen päppelt verletzte Funde wieder auf oder nimmt herrenlose Haustiere entgegen. Als Community setzt sich "Name e.V." für den Schutz von Tieren ein und konnte in der Vergangenheit Adoptivfamilien zu einem neuen Familienmitglied verhelfen. Neulinge werden im Umgang mit ihren neuen Vierbeinern unterstützt und es wird ihnen mit Rat und Tat zur Seite gestanden. Über Spenden finanzieren Tierliebhaber ein neues Leben für die Begleiter des Menschen.
+Das Tierheim "Pfotenfreunde Trier" setzt sich für hilfsbedürftige Tiere ein. Ein engagiertes Team von Pflegern und Freiwilligen päppelt verletzte Funde wieder auf oder nimmt herrenlose Haustiere entgegen. Als Community setzt sich "Pfotenfreunde Trier" für den Schutz von Tieren ein und konnte in der Vergangenheit Adoptivfamilien zu einem neuen Familienmitglied verhelfen. Neulinge werden im Umgang mit ihren neuen Vierbeinern unterstützt und es wird ihnen mit Rat und Tat zur Seite gestanden. Über Spenden finanzieren Tierliebhaber ein neues Leben für die Begleiter des Menschen.
 
 
 ## 2. Ziele des Projektes
@@ -108,4 +108,4 @@ Das Tierheim bietet auch qualitatives Zubehör an, dass die neuen Besitzer in ih
 Die Webseite soll auch eine Möglichkeit bieten Mitarbeiter anzuwerben. Diese Funktionen bietet den Suchenden eine Kontaktaufnahme an, um offene Stellen zu besetzen.
 
 ## Sitemap
-![Sitemap-Bild](../img/Sitemap.svg)
+![Sitemap-Bild](../img/sitemap.svg)

@@ -80,7 +80,10 @@
   </head>
   <body>
     <header>
-      <h1>Tiersteckbriefe</h1>
+      <a href=".index (vorschlag).php">
+        <img src="img/favicon.svg" alt="Logo von Pfotenfreunde Trier"/>
+        <h1>Pfotenfreunde Trier</h1>
+      </a>
     </header>
     <section>
       <nav>

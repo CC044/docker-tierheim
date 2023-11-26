@@ -128,23 +128,25 @@
             <legend>Betrag</legend>
             <div id="betrag">
               <label for="betragFeld">Beitrag</label>
-              <input type="text" id="betragFeld" name="betrag">
+              <input type="number" id="betragFeld" name="betrag" required="" min="1">
             </div>
             <div >€</div>
           </fieldset>
-          
+          <!-- Entschuldige, dass ich deine Formatierung zerschieße
+          spaeter klären:
+          soll bei den radios required und/oder checked hinzugefuegt werden?-->
           <fieldset>
             <legend>Auswahl</legend>
             <div>
-              <input type="radio" id="einmal" name ="zeitintervall" value="einmalig">
+              <input type="radio" id="einmal" name="zeitintervall" value="einmalig">
               <label for="einmal">einmalige Spende</label>
             </div>
             <div>
-              <input type="radio" id="monat" name ="zeitintervall" value="monatlich">
+              <input type="radio" id="monat" name="zeitintervall" value="monatlich">
               <label for="monat">monatliche Spende</label>
             </div>
             <div>
-              <input type="radio" id="jahr" name ="zeitintervall" value="jährlich">
+              <input type="radio" id="jahr" name="zeitintervall" value="jährlich">
               <label for="jahr">jährliche Spende</label>
             </div>
           </fieldset>
@@ -153,15 +155,15 @@
             <legend>Bankdaten</legend>
             <div>
               <label for="iban">IBAN:</label>
-              <input type="text" id="iban" name="iban">
+              <input type="text" id="iban" name="iban" required="">
             </div>
             <div>
               <label for="institut">Kreditinstitut:</label>
-              <input type="text" id="institut" name="institut">
+              <input type="text" id="institut" name="institut" required="">
             </div>
             <div>
                <label for="bic">BIC:</label>
-              <input type="text" id="bic" name="bic">
+              <input type="text" id="bic" name="bic" required="">
             </div>           
           </fieldset>
       
@@ -170,30 +172,30 @@
             <div class="parallel">
               <div>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required="">
               </div>
               <div>
                 <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname">
+                <input type="text" id="vorname" name="vorname" required="">
               </div>
             </div>
              
             <div class="parallel">
               <div>
                 <label for="plz">PLZ:</label>
-                <input type="text" id="plz" name="plz">
+                <input type="number" id="plz" name="plz" min="10000" max="99999" required="">
               </div>
               <div>
                 <label for="adresse">Adresse:</label>
-                <input type="text" id="adresse" name="adresse">
+                <input type="text" id="adresse" name="adresse" required="">
               </div>
             </div>
              
             
             <label for="geb">Geburtsdatum:</label>
-            <input type="text" id="geb" name="geb" value="TT.MM.JJJJ">
+            <input type="date" id="geb" name="geb" value="" placeholder="TT.MM.JJJJ" required="">
             <label for="mail">E-Mail:</label>
-            <input type="text" id="mail" name="mail">
+            <input type="mail" id="mail" name="mail" required="">
           </fieldset>
           <!--<label for="SpendeSende">Spenden</label>-->
           <input type="submit" id="SpendeSenden" name="SpendeSenden" value="Senden">

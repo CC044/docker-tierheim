@@ -9,7 +9,7 @@ Beschreiben Sie hier die Voraussetzungen und das Umfeld der Site. Gehen Sie auf 
 - Was sind Ziele und Umfang des Projekts? Was bringt die Site dem Auftraggeber?
 - Wer sind Sie? Was sind Ihre besonderen Qualifikationen?
 
-Auftraggeber: Tierheim Verein
+Auftraggeber: Tierheim "Pfotenfreunde Trier"
 Ziele: News/Bekanntmachungen; Vermittlung von Tieren; Aufnahme von Tieren; Spenden ermöglichen (Anzeige von Bankinformation / Patenschaft / Sachspenden); Wissenswertes in der Haltung / im Umgang mit Tieren; Webshop für Zubehör
 
 

@@ -33,38 +33,38 @@
           <legend>Angaben zum Tier</legend>
 
           <div>
-          <p>Tierart:</p>
-          <select>
+          <label for="tierart">Tierart:</label>
+          <select id="tierart">
             <option value="Hund">Hund</option>
             <option value="Katze">Hund</option>
             <option value="Kleintiere">Kleintiere</option>
           </select>
           </div>
           <div>
-          <input type="radio" id="verletzt" name="tierzustand" value="verletzung">Das Tier hat eine Verletzung
+          <input type="radio" id="verletzt" name="tierzustand" value="verletzung"><label for="verletzt">Das Tier hat eine Verletzung</label>
           </div>
           <div>
-            <input type="radio" id="find" name="tierzustand" value="findling" checked="">Das Tier ist ein Findling
+            <input type="radio" id="find" name="tierzustand" value="findling" checked=""><label for="find">Das Tier ist ein Findling</label>
           </div>
           <div>
-          <input type="radio" id="haustier" name="tierzustand" value="haustier">Das Tier ist mein Haustier
+          <input type="radio" id="haustier" name="tierzustand" value="haustier"><label for="haustier">Das Tier ist mein Haustier</label>
           </div>
         </fieldset>
 
         <fieldset>
           <legend>Adressdaten</legend>
-          <label>Name:</label>
-          <input type="text" name="name"> 
-          <label>Vorname:</label>
-          <input type="text" name="vorname">
-          <label>PLZ:</label>
-          <input type="text" name="plz"> 
-          <label>Adresse:</label>
-          <input type="text" name="adresse">
-          <label>Geburtsdatum:</label>
-          <input type="text" name="geb" value="TT.MM.JJJJ">
-          <label>E-Mail:</label>
-          <input type="text" name="mail">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"> 
+          <label for="vorname">Vorname:</label>
+          <input type="text" id="vorname" name="vorname">
+          <label for="plz">PLZ:</label>
+          <input type="number" id="plz" name="plz" min="10000" max="99999"> 
+          <label for="adresse">Adresse:</label>
+          <input type="text" id="adresse" name="adresse">
+          <label for="geb">Geburtsdatum:</label>
+          <input type="date" id="geb" name="geb" value="" placeholder="TT.MM.JJJJ">
+          <label for="mail">E-Mail:</label>
+          <input type="email" id="mail" name="mail">
         </fieldset>
         <input type="submit" name="SpendeSenden" value="Senden">
       </form>

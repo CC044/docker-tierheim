@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tierheim ... | Startseite</title>
+    <title>Pfotenfreunde Trier | Startseite</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
     <meta name="robots" content="nofollow">
@@ -26,7 +26,7 @@
   </head>
   <body>
     <header>
-      <h1>Tierheim ...</h1>
+      <h1>Pfotenfreunde Trier</h1>
     </header>
     <section>
       <nav>
@@ -42,7 +42,7 @@
     <main>
       <section>
         <!-- Bild maybe tierheim oder tiere oder logo... -->
-        <h1>Wilkommen beim Tierheim ...</h1><h2>"slogan bsp"Wo Streuner ein Zuhause finden.</h2>
+        <h1>Wilkommen beiden Pfotenfreunden Trier</h1><h2>"slogan bsp"Wo Streuner ein Zuhause finden.</h2>
         <p>seit 19xx helfen, pflegen und vermitteln wir [verschiedene Haustiere] oder [<a href="tiersteckbriefe.php?kategorie=hund">Hunde</a>, <a href="tiersteckbriefe.php?kategorie=katze">Katzen</a> und <a href="tiersteckbriefe.php?kategorie=kleintiere">Kleintiere</a>]. Wir bieten den Streunern aus der Region hier in ... ein Zuhause ... "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </section>
       <section>
