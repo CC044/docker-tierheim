@@ -1,0 +1,85 @@
+main{
+  margin: 15px;
+  display: flex;
+  color: black;
+}
+.centerAlign{
+  text-align: center;
+}
+p.centerAlign{
+  font-size: 2rem;
+}
+#linkeSeite{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 6px;
+  margin-right: 5px;
+  width: 60%
+}
+#infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+}
+#spendenformular{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  border: 3px solid black;
+  border-radius: 6px;
+  margin-left: 5px;
+  padding: 3px;
+}
+#formular{
+  display: flex;
+  justify-content: center;
+}
+input[type=text], input[type=submit]{
+  border-radius: 4px;
+}
+input[type=text]{
+  width: 100%;
+}
+form{
+  width: 50%;
+}
+fieldset{
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+#betrag{
+  width: 90%;
+  margin-right: 3px;
+}
+#fieldBetrag{
+  display: flex;
+}
+.parallel{
+  display: flex;
+  flex-direction: row;
+}
+.parallel div{
+  width: 50%;
+}
+.parallel input[type=text]{
+  width: 80%
+}
+@media only screen and (max-width: 800px) {
+/* For mobile phones: */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  #linkeSeite, #spendenformular{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #spendenformular{
+    margin-top: 15px;
+  }
+}
