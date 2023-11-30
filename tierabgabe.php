@@ -12,7 +12,10 @@
   </head>
   <body>
     <header>
-        <h1>Pfotenfreunde Trier</h1>
+        <a href="index.php">
+          <img src="img/favicon.svg" alt="Logo von Pfotenfreunde Trier">
+          <h1>Pfotenfreunde Trier</h1>
+        </a>
     </header>
 
     <section>
@@ -36,18 +39,18 @@
           <label for="tierart">Tierart:</label>
           <select id="tierart">
             <option value="Hund">Hund</option>
-            <option value="Katze">Hund</option>
+            <option value="Katze">Katze</option>
             <option value="Kleintiere">Kleintiere</option>
           </select>
           </div>
           <div>
-          <input type="radio" id="verletzt" name="tierzustand" value="verletzung"><label for="verletzt">Das Tier hat eine Verletzung</label>
+          <input type="checkbox" id="verletzt" name="tierzustand" value="verletzung"><label for="verletzt">Das Tier hat eine Verletzung</label>
           </div>
           <div>
-            <input type="radio" id="find" name="tierzustand" value="findling" checked=""><label for="find">Das Tier ist ein Findling</label>
+            <input type="checkbox" id="find" name="tierzustand" value="findling"><label for="find">Das Tier ist ein Findling</label>
           </div>
           <div>
-          <input type="radio" id="haustier" name="tierzustand" value="haustier"><label for="haustier">Das Tier ist mein Haustier</label>
+          <input type="checkbox" id="haustier" name="tierzustand" value="haustier"><label for="haustier">Das Tier ist mein Haustier</label>
           </div>
         </fieldset>
 
@@ -62,7 +65,7 @@
           <label for="adresse">Adresse:</label>
           <input type="text" id="adresse" name="adresse">
           <label for="geb">Geburtsdatum:</label>
-          <input type="date" id="geb" name="geb" value="" placeholder="TT.MM.JJJJ">
+          <input type="date" id="geb" name="geb">
           <label for="mail">E-Mail:</label>
           <input type="email" id="mail" name="mail">
         </fieldset>
@@ -76,9 +79,6 @@
       </p>
       <p>
         <a href="kontakte.html">Kontakte</a>
-      </p>
-      <p>
-        <a href="sitemap.xml">Sitemap</a>
       </p>
     </footer>
   </body>

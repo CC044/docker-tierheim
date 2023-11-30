@@ -38,10 +38,10 @@ p.centerAlign{
   display: flex;
   justify-content: center;
 }
-input[type=text], input[type=submit]{
+input[type=text], input[type=submit],input[type=date], input[type=email], input[type=number] {
   border-radius: 4px;
 }
-input[type=text]{
+input[type=text], input[type=date], input[type=email] {
   width: 100%;
 }
 form{
@@ -51,21 +51,34 @@ fieldset{
   border-radius: 4px;
   background-color: #f8f8f8;
 }
-#betrag{
-  width: 90%;
-  margin-right: 3px;
+
+#betragInput{
+  display: flex;
+  flex-direction: row;
 }
+
+#betragInput p{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
 #fieldBetrag{
   display: flex;
+  flex-direction: column;
 }
 .parallel{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .parallel div{
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-.parallel input[type=text]{
+.parallel input{
   width: 80%
 }
 @media only screen and (max-width: 800px) {

@@ -1,0 +1,28 @@
+main{
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  color:black;
+}
+body {
+  text-align: center;
+}
+main a {
+  color: black;
+  text-decoration: none;
+}
+main p a {
+color: green;
+text-decoration: underline;
+font-style: italic;
+font-weight: bold;
+}
+h1 em{
+  color:green;
+}
+section{
+  margin-bottom:3%;
+}
+article{
+  margin-bottom:3%;
+}

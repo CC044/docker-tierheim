@@ -109,3 +109,7 @@ Die Webseite soll auch eine Möglichkeit bieten Mitarbeiter anzuwerben. Diese Fu
 
 ## Sitemap
 ![Sitemap-Bild](../img/sitemap.svg)
+4 Vorhanden: Start, Spenden, Tierabgabe, Tiersteckbriefe
+5 Es fehlt: Patenschaft, Bewerbung, Zubehörshop, Impressum/Kontakt, Mitarbeiter
+
++ Sitemap

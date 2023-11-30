@@ -6,17 +6,30 @@ html{
 
 body {
   background-color: #fff;
-  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Ubuntu"; /* Schriftart des Betriebssystems */
+  /*font-size;*/
   margin: 0; /* Fuer alle Browser angleichen */
 }
+
 
 header {
   background-color: #004D26;
   padding: 10px;
-  text-align: center;
+}
+
+header a {
+  display: flex;
+  /* flex-direction: wrap; */
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
   font-size: 1rem;
-  color: white;
+}
+
+header a img {
+  margin: 0.8em;
+  height: auto;
+  width: 4em;
 }
 
 /* Style für die Navigationsleiste */
@@ -39,24 +52,21 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: all .4s cubic-bezier(.17,.84,.44,1); /* ease-out quartic */
+  border-top: 2px solid #111;
 }
 
 nav li a:hover {
-  background-color: #333;
+  background-color: #004d26;
+  color: #fff;
 }
 
-main li a {
-  display: block;
+nav p {
   color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #d0d0d0;
+  margin: 1em;
 }
 
-main li a:hover {
-  background-color: #b2b2b2;
-}
+/* Nav-End */
 
 main{
   color: #000;

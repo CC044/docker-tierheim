@@ -1,0 +1,50 @@
+main {
+  margin: 1em;
+}
+main > ul {
+  list-style: none;
+}
+
+main li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #d0d0d0;
+}
+
+main li a:hover {
+  background-color: #b2b2b2;
+  transition: all .4s cubic-bezier(.17,.84,.44,1); /* ease-out quartic */
+}
+
+/* Tierkarten */
+/* Flex-Container */
+.cardUebersicht {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* Flex-Item */
+.card {
+  margin: 3px;
+  height: auto;
+  width: 350px;
+}
+.cardBild {
+  height: auto;
+  width: 100%;
+  max-width: 640px;
+}
+.cardBild img {
+  height: auto;
+  width: 100%;
+  max-width: 640px;
+}
+/* .cardText {} */
+/* .cardAttribute {} */

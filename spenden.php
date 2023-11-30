@@ -9,93 +9,13 @@
     <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
     <meta name="robots" content="nofollow">
     <meta name="description" content="Beschreibung">
-    <style>
-      /*
-      main{
-        font-size: auto;
-        margin: 15px;
-        display: flex;
-        color: black;
-      }
-      main h1{
-        text-align: center;
-      }
-      #linkeSeite{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border: 3px solid black;
-        border-radius: 6px;
-        margin-right: 5px;
-        width: 60%
-      }
-      #infos{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-      }
-      #spendenformular{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 40%;
-        border: 3px solid black;
-        border-radius: 6px;
-        margin-left: 5px;
-        padding: 3px;
-      }
-      #formular{
-        display: flex;
-        justify-content: center;
-      }
-      input[type=text], input[type=submit]{
-        border-radius: 4px;
-      }
-      input[type=text]{
-        width: 100%;
-      }
-      form{
-        width: 50%;
-      }
-      fieldset{
-        border-radius: 4px;
-        background-color: #f8f8f8;
-      }
-      #betrag{
-        width: 90%;
-        margin-right: 3px;
-      }
-      #fieldBetrag{
-        display: flex;
-      }
-      .parallel{
-        display: flex;
-        flex-direction: row;
-      }
-      .parallel div{
-        width: 50%;
-      }
-      .parallel input[type=text]{
-        width: 80%
-      }
-      @media only screen and (max-width: 800px) {
-      /* For mobile phones:
-        main {
-          display: flex;
-          flex-direction: column;
-        }
-        #linkeSeite, #spendenformular{
-          width: 100%;
-          padding: 0;
-          margin: 0;
-        }
-      }
-      */
-    </style>
   </head>
   <body>
     <header>
-      <h1>Pfotenfreunde Trier</h1>
+      <a href="index.php">
+        <img src="img/favicon.svg" alt="Logo von Pfotenfreunde Trier">
+        <h1>Pfotenfreunde Trier</h1>
+      </a>
     </header>
     
     <section>
@@ -126,15 +46,13 @@
         <form>
           <fieldset id="fieldBetrag">
             <legend>Betrag</legend>
-            <div id="betrag">
-              <label for="betragFeld">Beitrag</label>
-              <input type="number" id="betragFeld" name="betrag" required="" min="1">
-            </div>
-            <div >€</div>
+            
+            <label for="betragFeld">Beitrag:</label>
+            <div id="betragInput">
+              <input type="number" id="betragFeld" name="betrag" required min="1">
+              <p>&#8364;</p>
+            </div> 
           </fieldset>
-          <!-- Entschuldige, dass ich deine Formatierung zerschieße
-          spaeter klären:
-          soll bei den radios required und/oder checked hinzugefuegt werden?-->
           <fieldset>
             <legend>Auswahl</legend>
             <div>
@@ -183,19 +101,19 @@
             <div class="parallel">
               <div>
                 <label for="plz">PLZ:</label>
-                <input type="number" id="plz" name="plz" min="10000" max="99999" required="">
+                <input type="number" id="plz" name="plz" min="10000" max="99999" required>
               </div>
               <div>
                 <label for="adresse">Adresse:</label>
-                <input type="text" id="adresse" name="adresse" required="">
+                <input type="text" id="adresse" name="adresse" required>
               </div>
             </div>
              
             
             <label for="geb">Geburtsdatum:</label>
-            <input type="date" id="geb" name="geb" value="" placeholder="TT.MM.JJJJ" required="">
+            <input type="date" id="geb" name="geb" required>
             <label for="mail">E-Mail:</label>
-            <input type="mail" id="mail" name="mail" required="">
+            <input type="email" id="mail" name="mail" required>
           </fieldset>
           <!--<label for="SpendeSende">Spenden</label>-->
           <input type="submit" id="SpendeSenden" name="SpendeSenden" value="Senden">
@@ -210,9 +128,6 @@
       </p>
       <p>
         <a href="kontakte.html">Kontakte</a>
-      </p>
-      <p>
-        <a href="sitemap.xml">Sitemap</a>
       </p>
     </footer>
   </body>
