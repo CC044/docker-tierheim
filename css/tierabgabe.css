@@ -1,39 +1,79 @@
-main{
-    font-size:  20px;
+main {
+    /*font-size:  20px;*/
     margin: 15px;
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    color: black;
+    justify-content: space-evenly;
 }
 
-#tierabgabe{
+/*Style für Spendenformular*/
+
+#tierabgabe {
   width: 30%;
-  border: 3px solid black;
+  border: 3px solid #004d26;
   border-radius: 6px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-#tierabgabe p{
+#tierabgabe p {
   margin: 0;
 }
 
-#tierabgabe h1{
+#tierabgabe h1 {
   text-align: center;
 }
 
-input[type=text], input[type=date], input[type=number], input[type=email]{
+input[type=text], input[type=date], input[type=number], input[type=email] {
+  width: 100%;
+  border-radius: 6px;
+}
+
+input[type=checkbox], input[type=checkbox] + label, input[type=submit] {
+  cursor: pointer;
+}
+
+fieldset {
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+#tierabgabeSenden{
+  font-size: 1rem;
+  margin: 1em 0;
+  padding: 1em;
   width: 100%;
 }
 
-fieldset{
-  border-radius: 4px;
-  background-color: #f8f8f8;
+/*Style für die Bilder*/
+
+aside {
+  width: 30%;
+  border: 3px solid #004d26;
+  border-radius: 6px;
+  height: auto;
+  width: 30%;
+  max-width: 640px;
+}
+
+aside img{
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+
 }
 
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
   #tierabgabe{
     width: 100%;
+  }
+
+  aside {
+    display: none;
   }
 }

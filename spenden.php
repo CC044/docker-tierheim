@@ -3,40 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spenden</title>
+    <title>Pfotenfreunde Trier | Spenden</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/spenden.css" rel="stylesheet" type="text/css">
     <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
     <meta name="robots" content="nofollow">
     <meta name="description" content="Beschreibung">
+    <script defer src="scripts/navigation.js" defer></script>
+    <script defer src="scripts/spenden.js"></script>
   </head>
   <body>
-    <header>
-      <a href="index.php">
-        <img src="img/favicon.svg" alt="Logo von Pfotenfreunde Trier">
-        <h1>Pfotenfreunde Trier</h1>
-      </a>
-    </header>
-    
-    <section>
-      <nav>
-        <ul>
-          <li><a href="index.php">Start</a></li>
-          <li><a href="tiersteckbriefe.php">Tiersteckbriefe</a></li>
-          <li><a href="tierabgabe.php">Tierabgabe</a></li>
-          <li><a href="spenden.php">Spenden</a></li>
-        </ul>
-      </nav>
-    </section>
-    
+    <?php
+      include ("lib/headerNav.inc.php");
+    ?>
+
     <main>
       <!-- Spendeninformationen -->
+      <section id="spendenTop">
       <section id="linkeSeite">
       <section id="infos">
         <h2 class="centerAlign">Spendeninformationen</h2>
-        <p>Auf dieser Seite können Sie für die Arbeit des Tierheimes spenden. Damit finanzieren Sie unteranderem das Futter und die tierärztlichen Bahandlungen unserer Tiere. Um Ihre Spende abzugeben, können Sie entweder das Spendenformular auf dieser Seite benutzen oder direkt über die unten angegebenen Bankdaten an uns spenden.</p>
-        <p><strong>Spendenkonto</strong><br>Sparkasse Trier<br>Kontonr.:<br>BLZ:<br>IBAN:<br>BIC:</p>
-        <p class="centerAlign"><strong>Vielen Dank für Ihre Spende !!!</strong></p>
+        <p>Auf dieser Seite können Sie für die Arbeit des Tierheimes spenden. Damit finanzieren Sie unter anderem das Futter und die tierärztlichen Bahandlungen unserer Tiere. Um Ihre Spende abzugeben, können Sie entweder das Spendenformular auf dieser Seite benutzen oder direkt über die unten angegebenen Bankdaten an uns spenden.</p>
+        <p>
+          <strong>Spendenkonto</strong><br>
+          Bank Trier<br>
+          Kontonummer: 1234 5678 90<br>
+          Bankleitzahl: 0008 0009<br>
+          IBAN: DE11 0009 0009 1234 5678 90<br>
+          BIC: QWEASDYX<br>
+          Verwendungszweck: Pfotenfreunde Allgemeine Spende
+        </p>
+        <p class="centerAlign">
+          <strong>Vielen Dank für Ihre Spende !!!</strong>
+        </p>
       </section>
       </section>
       <!-- Spendenformular -->
@@ -47,9 +46,9 @@
           <fieldset id="fieldBetrag">
             <legend>Betrag</legend>
             
-            <label for="betragFeld">Beitrag:</label>
+            <label for="betragFeld">Betrag:</label>
             <div id="betragInput">
-              <input type="number" id="betragFeld" name="betrag" required min="1">
+              <input type="number" id="betragFeld" name="betrag" required min="1" autofocus>
               <p>&#8364;</p>
             </div> 
           </fieldset>
@@ -73,7 +72,7 @@
             <legend>Bankdaten</legend>
             <div>
               <label for="iban">IBAN:</label>
-              <input type="text" id="iban" name="iban" required="">
+              <input type="text" id="iban" name="iban" required="" minlength="22" maxlength="22">
             </div>
             <div>
               <label for="institut">Kreditinstitut:</label>
@@ -81,7 +80,7 @@
             </div>
             <div>
                <label for="bic">BIC:</label>
-              <input type="text" id="bic" name="bic" required="">
+              <input type="text" id="bic" name="bic" required="" minlength="8" maxlength="11">
             </div>           
           </fieldset>
       
@@ -89,7 +88,7 @@
             <legend>Adressdaten</legend>
             <div class="parallel">
               <div>
-                <label for="name">Name:</label>
+                <label for="name">Nachname:</label>
                 <input type="text" id="name" name="name" required="">
               </div>
               <div>
@@ -115,20 +114,22 @@
             <label for="mail">E-Mail:</label>
             <input type="email" id="mail" name="mail" required>
           </fieldset>
-          <!--<label for="SpendeSende">Spenden</label>-->
-          <input type="submit" id="SpendeSenden" name="SpendeSenden" value="Senden">
+          <!--<label for="spendeSende">Jetzt Spenden</label>-->
+          <input type="submit" id="spendeSenden" class="btn" name="SpendeSenden" value="Jetzt spenden">
+          <!-- <button>test1 this btn would send form</button> -->
         </form>
-        </section>
+          <!-- <button>test2 this btn wouldnt send form</button> -->
+      </section>
+      <section id="spendenBottom">
+        <h2 class="centerAlign">Spendenranking</h2>
+        <aside id="spendenRanking">
+          
+        </aside>
       </section>
     </main>
     
-    <footer>
-      <p>
-        <a href="impressum.html">Impressum</a>
-      </p>
-      <p>
-        <a href="kontakte.html">Kontakte</a>
-      </p>
-    </footer>
+    <?php
+      include ("lib/footer.inc.php");
+    ?>
   </body>
 </html>

@@ -1,42 +1,52 @@
-main{
+main {
+  display: flex;
+  flex-direction: column;
+  /*color: #000;*/
+}
+
+/*Spendenformular*/
+
+#spendenTop {
   margin: 15px;
   display: flex;
-  color: black;
 }
-.centerAlign{
+.centerAlign {
   text-align: center;
 }
-p.centerAlign{
+
+p.centerAlign {
   font-size: 2rem;
 }
-#linkeSeite{
+
+#linkeSeite {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 3px solid black;
+  border: 3px solid #004d26;
   border-radius: 6px;
   margin-right: 5px;
   width: 60%
 }
-#infos{
+#infos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 70%;
 }
-#spendenformular{
+#spendenformular {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  border: 3px solid black;
+  border: 3px solid #004d26;
   border-radius: 6px;
   margin-left: 5px;
   padding: 3px;
 }
-#formular{
+#formular {
   display: flex;
   justify-content: center;
+  padding-bottom: 2em;
 }
 input[type=text], input[type=submit],input[type=date], input[type=email], input[type=number] {
   border-radius: 4px;
@@ -44,55 +54,109 @@ input[type=text], input[type=submit],input[type=date], input[type=email], input[
 input[type=text], input[type=date], input[type=email] {
   width: 100%;
 }
-form{
+input[type=radio], input[type=radio] + label, input[type=submit]{
+  cursor: pointer;
+}
+form {
   width: 50%;
 }
-fieldset{
+fieldset {
   border-radius: 4px;
   background-color: #f8f8f8;
 }
 
-#betragInput{
+#betragInput {
   display: flex;
   flex-direction: row;
 }
 
-#betragInput p{
+#betragInput p {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 3px;
   margin-left: 3px;
 }
 
-#fieldBetrag{
+#fieldBetrag {
   display: flex;
   flex-direction: column;
 }
-.parallel{
+.parallel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.parallel div{
+.parallel div {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-.parallel input{
+.parallel input {
   width: 80%
 }
+#spendeSenden {
+  font-size: 1rem;
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+  display: block;
+  color: #fff;
+  border-radius: 2em;
+}
+
+#spendenBottom {
+  border: 3px solid #004d26;
+  border-radius: 6px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/*Spendenranking*/
+
+#spendenRanking {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.row {
+  display:flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.row p {
+  color:white;
+  background-color: #004d26;
+  margin: 0;
+  padding: 1em;
+}
+
+.name {
+  border-radius: 6px 0px 0px 6px;
+}
+
+.betrag {
+  border-radius: 0px 6px 6px 0px;
+}
+
 @media only screen and (max-width: 800px) {
 /* For mobile phones: */
-  main {
+  #spendenTop {
     display: flex;
     flex-direction: column;
   }
-  #linkeSeite, #spendenformular{
-    width: 100%;
+  #linkeSeite, #spendenformular {
+    width: auto;
     padding: 0;
     margin: 0;
   }
-  #spendenformular{
+  #spendenformular {
     margin-top: 15px;
+  }
+
+  #spendenRanking {
+    display: flex;
+    flex-direction: column;
   }
 }

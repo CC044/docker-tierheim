@@ -1,28 +1,36 @@
-main{
-  margin: 8px;
-  display: flex;
-  flex-direction: column;
-  color:black;
-}
 body {
   text-align: center;
 }
-main a {
-  color: black;
-  text-decoration: none;
+
+main {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  /*color: #000;*/
 }
-main p a {
-color: green;
-text-decoration: underline;
-font-style: italic;
-font-weight: bold;
+
+.link, main p a, main p a:link {
+  color: #004D26;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  will-change: color;
+  transition: color 650ms;
 }
-h1 em{
-  color:green;
+main a:focus, main a:hover, main a:active {
+  color: #00aa54;
+  will-change: color;
 }
-section{
-  margin-bottom:3%;
+
+h1 em {
+  color: #004D26;
 }
-article{
-  margin-bottom:3%;
+p {
+  text-align: left;
+}
+section, article {
+  margin-bottom: 1em;
+}
+footer a {
+  color: #fff;
 }

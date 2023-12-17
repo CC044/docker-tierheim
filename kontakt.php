@@ -3,21 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tiersteckbriefe</title>
+    <title>Pfotenfreunde Trier | Tierabgabe</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/tiersteckbriefe.css" rel="stylesheet" type="text/css">
+    <link href="css/tierabgabe.css" rel="stylesheet" type="text/css">
     <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
     <meta name="robots" content="nofollow">
-    <meta name="description" content="Beschreibung der Webseite">
-    <script defer src="scripts/navigation.js" defer></script>
+    <meta name="description" content="Beschreibung">
+    <script src="scripts/navigation.js" defer></script>
+     <script defer src="scripts/tierabgabe.js"></script>
   </head>
   <body>
     <?php
       include ("lib/headerNav.inc.php");
     ?>
-    <?php
-      include ("lib/tiersteckbriefeMain.inc.php");
-    ?>
+
+    <main>
+
+    </main>
     <?php
       include ("lib/footer.inc.php");
     ?>

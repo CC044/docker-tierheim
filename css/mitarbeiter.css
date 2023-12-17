@@ -1,0 +1,55 @@
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+aside div {
+  /*width: 30%;*/
+  margin: 1rem;
+  border: solid #004d26 3px;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+aside figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+aside img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 6px;
+}
+
+#mitarbeiter h2 {
+  text-align: center;
+}
+
+#mitarbeiter h3 {
+  padding: 5px;
+  text-align: center;
+  /*
+  border-top:solid #004d26 3px;
+  border-bottom:solid #004d26 3px;
+  */
+  background-color: #004d26;
+  color: white;
+  border-radius: 6px;
+}
+
+#ehrenamtliche {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+@media only screen and (max-width: 800px) {
+/* For mobile phones: */
+  aside{
+    flex-wrap: wrap;
+  }
+}

@@ -3,32 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spenden</title>
+    <title>Pfotenfreunde Trier | Tierabgabe</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/tierabgabe.css" rel="stylesheet" type="text/css">
     <link rel="alternate icon" type="image/svg" href="img/favicon.svg">
     <meta name="robots" content="nofollow">
     <meta name="description" content="Beschreibung">
+    <script src="scripts/navigation.js" defer></script>
+     <script defer src="scripts/tierabgabe.js"></script>
   </head>
   <body>
-    <header>
-        <a href="index.php">
-          <img src="img/favicon.svg" alt="Logo von Pfotenfreunde Trier">
-          <h1>Pfotenfreunde Trier</h1>
-        </a>
-    </header>
-
-    <section>
-      <nav>
-        <ul>
-          <li><a href="index.php">Start</a></li>
-          <li><a href="tiersteckbriefe.php">Tiersteckbriefe</a></li>
-          <li><a href="tierabgabe.php">Tierabgabe</a></li>
-          <li><a href="spenden.php">Spenden</a></li>
-        </ul>
-      </nav>
-    </section>
+    <?php
+      include ("lib/headerNav.inc.php");
+    ?>
+    
     <main>
+    <aside>
+      <img id="leftPic" src="img/tiere/hunde/hund-tierabgabe.jpg" alt="Bild eines Hundes">
+    </aside>
     <section id="tierabgabe">
       <h1>Formular für die Tierabgabe</h1>
       <form>
@@ -37,7 +29,7 @@
 
           <div>
           <label for="tierart">Tierart:</label>
-          <select id="tierart">
+          <select id="tierart" name="tierart" autofocus>
             <option value="Hund">Hund</option>
             <option value="Katze">Katze</option>
             <option value="Kleintiere">Kleintiere</option>
@@ -56,30 +48,28 @@
 
         <fieldset>
           <legend>Adressdaten</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"> 
+          <label for="name">Nachname:</label>
+          <input type="text" id="name" name="name" required> 
           <label for="vorname">Vorname:</label>
-          <input type="text" id="vorname" name="vorname">
-          <label for="plz">PLZ:</label>
-          <input type="number" id="plz" name="plz" min="10000" max="99999"> 
+          <input type="text" id="vorname" name="vorname" required>
+          <label for="plz">Postleitzahl:</label>
+          <input type="number" id="plz" name="plz" min="10000" max="99999" required> 
           <label for="adresse">Adresse:</label>
-          <input type="text" id="adresse" name="adresse">
+          <input type="text" id="adresse" name="adresse" required>
           <label for="geb">Geburtsdatum:</label>
-          <input type="date" id="geb" name="geb">
+          <input type="date" id="geb" name="geb" required>
           <label for="mail">E-Mail:</label>
-          <input type="email" id="mail" name="mail">
+          <input type="email" id="mail" name="mail" required>
         </fieldset>
-        <input type="submit" name="SpendeSenden" value="Senden">
+        <input type="submit" id="tierabgabeSenden" class="btn" name="SpendeSenden" value="Tier abgeben">
       </form>
     </section>
+    <aside>
+      <img src="img/tiere/katzen/katze-tierabgabe.jpg" alt="Bild einer Katze">
+    </aside>
     </main>
-    <footer>
-      <p>
-        <a href="impressum.html">Impressum</a>
-      </p>
-      <p>
-        <a href="kontakte.html">Kontakte</a>
-      </p>
-    </footer>
+    <?php
+      include ("lib/footer.inc.php");
+    ?>
   </body>
 </html>

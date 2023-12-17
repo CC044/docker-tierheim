@@ -1,3 +1,7 @@
+/* body {  /* card-look * /
+  background-color: #ddd;
+} */
+
 main {
   margin: 1em;
 }
@@ -7,16 +11,7 @@ main > ul {
 
 main li a {
   display: block;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #d0d0d0;
-}
 
-main li a:hover {
-  background-color: #b2b2b2;
-  transition: all .4s cubic-bezier(.17,.84,.44,1); /* ease-out quartic */
 }
 
 /* Tierkarten */
@@ -32,9 +27,13 @@ main li a:hover {
 }
 /* Flex-Item */
 .card {
-  margin: 3px;
+  margin: 0.7em;
+  padding: 1.5em; /*card-look*/
   height: auto;
   width: 350px;
+  /*background-color: #fff; /* card-look*/
+  border: 0.18em solid #004d26;
+  border-radius: 0.5em;
 }
 .cardBild {
   height: auto;
@@ -48,3 +47,11 @@ main li a:hover {
 }
 /* .cardText {} */
 /* .cardAttribute {} */
+
+/* Animationen deaktivieren fuer photosensitive Epileptiker */
+@media (prefers-reduced-motion: reduce) {
+  main li a, main li a:hover
+  {
+    transition: none;
+  }
+}
