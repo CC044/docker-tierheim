@@ -1,0 +1,47 @@
+h1{
+  text-align: center;
+}
+h1,h2,h3,p{
+  hyphens: auto; 
+  overflow-wrap: break-word; 
+}
+section, div {
+  border: 2px solid darkgreen;
+  border-radius: 6px;
+  padding:8px;
+  margin-bottom: 4px;
+  display: flex;
+  hyphens: auto; 
+  overflow-wrap: break-word; 
+  display: flex;
+  flex-direction: column;
+} 
+@media screen and (min-width: 1000px) {
+  .flex {
+      flex-direction: row;
+  }
+}
+  article {
+  border-bottom: 2px solid darkgreen;
+  display: flex;
+  hyphens: auto; 
+  overflow-wrap: break-word; 
+  display: flex;
+  flex-direction: column;
+} 
+@media screen and (min-width: 1000px) {
+  .flexborder {
+      border-bottom: none;
+      border-right: 2px solid darkgreen;
+      margin-right: 8px;
+  }
+}
+main {
+  margin:8px;
+  display: flex;
+  flex-direction: column; 
+  /*color: #000;*/
+}
+label{
+  color: darkgreen;
+}

@@ -7,23 +7,11 @@
   src: url('fonts/nunito-v26-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* nunito-italic - latin_latin-ext */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/nunito-v26-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/*Nunito[wght].ttf: Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
-Nunito-Italic[wght].ttf: Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
-License: https://openfontlicense.org/open-font-license-official-text/
-*/
-
 html {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,6 +45,7 @@ footer a:focus, footer a:hover, footer a:active{
 
 .btn {
   display: block;
+  cursor: pointer;
   color: #fff;
   background-color: #004d26;
   margin: 0.7em 0;
@@ -142,6 +131,14 @@ nav li a:hover, nav li a:active, nav li a:focus, .currentSite {
   will-change: background-color;
 }
 
+nav label {
+  cursor: pointer;
+  position: relative;
+  top: 25%;
+  left: -12%;
+  width: 1px; /* Damit screenreader das label erkennen */
+}
+
 /* topmenu & submenu */
 .topmenu {
   list-style: none;
@@ -170,15 +167,16 @@ nav li a:hover, nav li a:active, nav li a:focus, .currentSite {
   transition-delay: 0ms;
 }
 
-.topmenu a {
+.topmenu a, .topmenu label {
   text-decoration: none;
-  color: white;
+  color: #fff;
   display: block;
 }
 
 .topmenu button {
-  background-color: #111;
+  background-color: inherit;
   color: #fff;
+  cursor: pointer;
   font-size: 1.5rem;
   border: 0;
   width: 100%;
@@ -214,14 +212,17 @@ nav li a:hover, nav li a:active, nav li a:focus, .currentSite {
 .breadcrumb {
   padding: 1em;
 }
+/* Navigation Ende */
 
-main{
+main {
   background-color: #fff;
   color: #000;
   font-size: 1.6rem;
 }
-
-/* Navigation Ende */
+fieldset {
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
 
 /* Style the footer */
 footer {
@@ -235,20 +236,57 @@ footer a, footer{
   color: #fff;
 }
 
+/* VOR DER ABGABE ENTFERNEN */
+.wavebtn {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px #959595;
+  padding: 2px;
+  height: 26px;
+  width: auto;
+}
+
 /* Animationen deaktivieren fuer photosensitive Epileptiker */
 @media (prefers-reduced-motion: reduce) {
+  a,
+  main a,
+  .btn, .btn:hover, .btn:active, .btn:focus,
+  footer a,
   nav li a,
   .topmenu li:hover .submenu,
   .submenu, openSubmenu
   {
-    transition: none;
+    transition: none !important;
   }
 }
-/* Dark mode *
-@media (prefers-color-scheme: dark) {
+
+/* Dark mode */
+/*@media (prefers-contrast: more) {*/
+/*@media (prefers-color-scheme: dark) {
   body, main {
     background-color: #111;
     color: #fff;
   }
+  nav {
+    box-shadow: 0px 0.5em 0.5em #555;
+    position: relative;
+  }
+  main a,
+  footer a {
+    text-decoration: underline solid currentColor 2px;
+    color: #04ff80;
+    transition: color 650ms;
+  }
 }*/
+
+@media only screen and (max-width: 800px) {
+/* For mobile phones: */
+  footer{
+    flex-direction: column;
+  }
+
+  footer p{
+    text-align: center;
+  }
+}
+
 

@@ -34,8 +34,18 @@ async function generateRanking(topSpender) {
   }
 } 
 
+async function getIBAN() {
+  // IBAN in Zwischenablage kopieren
+  let IBAN = document.getElementById("copyIBAN");
+  IBAN.addEventListener("click", () => {
+    IBAN.textContent.select();
+    document.execCommand("copy");
+  }); 
+}
+
 
 async function main(){
+  getIBAN();
   
   let topSpender = new Map();
   
@@ -58,5 +68,3 @@ async function main(){
 }
 
 main();
-
-

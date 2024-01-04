@@ -11,6 +11,7 @@ main {
   display: flex;
 }
 .centerAlign {
+  word-break: break-word;
   text-align: center;
 }
 
@@ -49,16 +50,17 @@ p.centerAlign {
   padding-bottom: 2em;
 }
 input[type=text], input[type=submit],input[type=date], input[type=email], input[type=number] {
-  border-radius: 4px;
+  border-radius: 6px;
 }
-input[type=text], input[type=date], input[type=email] {
+input[type=text], input[type=date], input[type=email], input[type=number] {
+  height: 1.5rem;
   width: 100%;
 }
 input[type=radio], input[type=radio] + label, input[type=submit]{
   cursor: pointer;
 }
-form {
-  width: 50%;
+form{
+  width: 60%;
 }
 fieldset {
   border-radius: 4px;
@@ -75,6 +77,13 @@ fieldset {
   margin-bottom: 0;
   margin-right: 3px;
   margin-left: 3px;
+  width: 20%;
+  text-align: center;
+}
+
+#betragInput input {
+  height: 1.5rem;
+  width: 80%;
 }
 
 #fieldBetrag {
@@ -104,42 +113,6 @@ fieldset {
   border-radius: 2em;
 }
 
-#spendenBottom {
-  border: 3px solid #004d26;
-  border-radius: 6px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-
-/*Spendenranking*/
-
-#spendenRanking {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-
-.row {
-  display:flex;
-  justify-content: center;
-  margin: 1rem;
-}
-
-.row p {
-  color:white;
-  background-color: #004d26;
-  margin: 0;
-  padding: 1em;
-}
-
-.name {
-  border-radius: 6px 0px 0px 6px;
-}
-
-.betrag {
-  border-radius: 0px 6px 6px 0px;
-}
-
 @media only screen and (max-width: 800px) {
 /* For mobile phones: */
   #spendenTop {
@@ -159,4 +132,35 @@ fieldset {
     display: flex;
     flex-direction: column;
   }
+  #infos{
+    width: 95%;
+  }
+  form{
+    width: 95%;
+  }
 }
+
+@media only screen and (max-width: 1200px) {
+/* Für das Formular */
+  .parallel {
+    display: flex;
+    flex-direction: column;
+  }
+  .parallel div{
+    width: 100%;
+  }
+  .parallel input {
+    width: 100%;
+  }
+  form{
+    width: 95%;
+  }
+}
+
+/* Dark mode * /
+@media (prefers-color-scheme: dark) {
+  fieldset {
+    background-color: #222;
+  }
+}*/
+

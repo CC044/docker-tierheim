@@ -76,8 +76,6 @@ Zubehör erhalten
 Das Tierheim hat auch die Aufgabe aufgenomme Tiere an verschiedene Gruppen von Adoptanten zu vermitteln. Je nach Gruppe unterscheiden sich die Bedürfnisse.
 Familien mit Kindern werden eher kinderfreundliche und ungefährliche Tiere aufnehmen wollen. Senioren und Neulingen in der Tierhaltung bevorzugen hingegen ein pflegeleichtes Tier, während erfahrene Tierhalter ein anspruchsvolleres Tier übernehmen werden. Unerfahrene Tierhalter möchten Unterstützung bei Fragen zu Haltung, Kosten und rechtlichen Belangen erhalten und Zubehör für ihre Tiere erwerben.
 
-~ 382 Wörter bis hier
-
 ## 4. Funktionen
 
 Welche Funktionen wollen Sie in der Website anbieten? Beispiele sind Forum, Shop, Gästebuch, Suchfunktion, also Funktionen, die Sie später programmieren werden oder auch externe Dienste oder Module, die Sie einbinden wollen, wie zum Beispiel eine Landkarte mit Routenfindung. Hier soll keine Beschreibung des Aufbaus der Webseite hin! Anmerkung: Einfache Funktionen sollten später programmiert werden (z.B. Gästebuch). Komplizierte Funktionen (z.B. Shop) können durch statische Seiten simuliert werden.

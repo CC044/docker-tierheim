@@ -47,6 +47,10 @@ aside img {
   width: auto;
 }
 
+#ehrenamtliche p{
+  text-align: center;
+}
+
 @media only screen and (max-width: 800px) {
 /* For mobile phones: */
   aside{

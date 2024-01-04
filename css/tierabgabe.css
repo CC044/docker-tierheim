@@ -6,7 +6,7 @@ main {
     justify-content: space-evenly;
 }
 
-/*Style für Spendenformular*/
+/*Style für Tierabgabeformular*/
 
 #tierabgabe {
   width: 30%;
@@ -27,12 +27,18 @@ main {
 }
 
 input[type=text], input[type=date], input[type=number], input[type=email] {
+  height: 1.5rem;
   width: 100%;
   border-radius: 6px;
 }
 
 input[type=checkbox], input[type=checkbox] + label, input[type=submit] {
   cursor: pointer;
+}
+
+select {
+  height: 1.5rem;
+  font-size: 1rem;
 }
 
 fieldset {
@@ -67,7 +73,7 @@ aside img{
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   /* For mobile phones: */
   #tierabgabe{
     width: 100%;
@@ -77,3 +83,10 @@ aside img{
     display: none;
   }
 }
+
+/* Dark mode * /
+@media (prefers-color-scheme: dark) {
+  fieldset {
+    background-color: #222;
+  }
+}*/

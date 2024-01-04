@@ -1,6 +1,15 @@
+## Feedback von Kristin
+Der Punkt "Wenn Spender nicht materielle Spenden abgeben wollen, soll es auch möglich sein immaterielle Sachspenden für individuelle Tiere abzugeben." ist keine Funktion der Webseite, oder?
+
+Für die finale Ausarbeitung bitte **Zielgruppen und Funktionen** in **Listenform** angeben.
+
+
 ## Responsive Design
 Wie haben Sie diesen Punkt in die Realisierung integriert? Welche Maßnahmen haben Sie getroffen, welche Techniken haben Sie verwendet? Geben Sie ein oder mehrere Beispiele aus Ihrer Implementierung an, in Aufzählungsform: Aspekt, zugehörige Maßnahme.
-
+- flex-box
+- CSS media-queries
+- Break points
+- Links und Navigationsleiste kann jeweils mit Tastatur, Maus oder Toucheingabe gesteuert werden
 
 ## Barrierefreiheit
 Welche Maßnahmen zur Barrierefreiheit haben Sie getroffen? Geben Sie hier Beispiele an, welche Kriterien Sie in Ihre Überlegungen mit einbezogen haben untersucht haben und was das für Ihre Realisierung bedeutet hat. Geben Sie Beispiele aus Ihrer Implementierung an, in Aufzählungsform:
@@ -21,3 +30,5 @@ Aspekt, zugehörige Maßnahme. Orientieren Sie sich an WCAG.
 - 3.3 Hilfestellung bei der Eingabe: Helfen Sie den Benutzern dabei, Fehler zu vermeiden und zu korrigieren.
 - 4.1 Kompatibel: Maximieren Sie die Kompatibilität mit aktuellen und zukünftigen Benutzeragenten, einschließlich assistierender Techniken.
 
+Bilder haben Textalternativen
+Fokus von Eingaben bei Seitenaufruf
