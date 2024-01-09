@@ -1,4 +1,12 @@
-FROM php:8.2-cli
+#no
+#
+
+
+# syntax=docker/dockerfile:1.4
+
+FROM --platform=$BUILDPLATFORM php:8.0.9-apache as builder
+
+CMD ["apache2-foreground"]
 
 FROM builder as dev-envs
 
@@ -15,4 +23,4 @@ EOF
 # install Docker tools (cli, buildx, compose)
 COPY --from=gloursdocker/docker / /
 
-CMD [ "php", "./your-script.php" ]
+CMD ["apache2-foreground"]
