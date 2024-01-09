@@ -6,10 +6,16 @@ Für die finale Ausarbeitung bitte **Zielgruppen und Funktionen** in **Listenfor
 
 ## Responsive Design
 Wie haben Sie diesen Punkt in die Realisierung integriert? Welche Maßnahmen haben Sie getroffen, welche Techniken haben Sie verwendet? Geben Sie ein oder mehrere Beispiele aus Ihrer Implementierung an, in Aufzählungsform: Aspekt, zugehörige Maßnahme.
+Bildschirmgrößen:
 - flex-box
-- CSS media-queries
 - Break points
+- relative Größenangaben (%, rem, em) für Größen und Positionsangaben
+- Wortumbrüche + Silbentrennung (css)
+Steuerung und verschiedene Eingabemöglichkeiten mit Tastatur, Maus oder Touch:
 - Links und Navigationsleiste kann jeweils mit Tastatur, Maus oder Toucheingabe gesteuert werden
+- kopieren in Zwischenablage für Smartphones
+Geräteunterstützung:
+- verschiedene Schriftarten auf die zurückgegriffen werden kann (betriebssystemabhängig)
 
 ## Barrierefreiheit
 Welche Maßnahmen zur Barrierefreiheit haben Sie getroffen? Geben Sie hier Beispiele an, welche Kriterien Sie in Ihre Überlegungen mit einbezogen haben untersucht haben und was das für Ihre Realisierung bedeutet hat. Geben Sie Beispiele aus Ihrer Implementierung an, in Aufzählungsform:
@@ -30,5 +36,22 @@ Aspekt, zugehörige Maßnahme. Orientieren Sie sich an WCAG.
 - 3.3 Hilfestellung bei der Eingabe: Helfen Sie den Benutzern dabei, Fehler zu vermeiden und zu korrigieren.
 - 4.1 Kompatibel: Maximieren Sie die Kompatibilität mit aktuellen und zukünftigen Benutzeragenten, einschließlich assistierender Techniken.
 
-Bilder haben Textalternativen
-Fokus von Eingaben bei Seitenaufruf
+### Maßnahmen?
+
+### Beispiele:
+- Bilder haben Textalternativen
+- Fokus von Eingaben bei Seitenaufruf (Formularen)
+- Breadcrumbs
+- Kontrast https://contrastchecker.com/
+- Tastatursteuerung
+- responsives Layout (mediaqueries, Flexboxen, relative Größenangaben)
+- deutliches, kontrastreiches hervorheben von Links
+- besuchte Links werden anders dargestellt
+- anklickbare Elemente werden durch Veränderung des Cursors deutlich angezeigt
+- "hover"-Effekte bei anklickbaren Elementen
+- kopieren in Zwischenablage Smartphone und PC
+- Animationen deaktivierbar für photosensitive Epileptiker
+- Formularattribute (required)
+- verschiedene Inputfelder für verschieden Funktionalitäten (date, email)
+- Rückmeldung bei erfolgreichen Aktionen oder Fehlermeldung
+- Unterstützung für Screenreader (Labels für Formelemente, Buttons, Links in schriftlicher Form)

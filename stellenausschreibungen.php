@@ -19,7 +19,7 @@
       <h1>Stellenausschreibungen und Bewerbung</h1>
       <div class="flex">
         <article class="flexborder">
-        <h2>Stellenausschreibung:Tierpfleger (m/w/d) Abteilung Hunde</h2>
+        <h2>Stellenausschreibung: Tierpfleger (m/w/d) Abteilung Hunde</h2>
         <p>Das Tierheim Pfotenfreunde Trier sucht qualifizierte Tierpflegerinnen und Tierpfleger für unsere Hundeabteilung. 
           Wenn Sie eine Leidenschaft für Hunde haben, über Erfahrung in der Tierpflege verfügen und die Herausforderungen in einem tierlieben Team annehmen möchten, dann könnte diese Position die perfekte Gelegenheit für Sie sein.</p>
         <h3>Aufgaben:</h3>

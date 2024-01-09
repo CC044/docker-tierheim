@@ -1,15 +1,16 @@
 main {
+  hyphens: auto;
+  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   /*color: #000;*/
 }
 
-/*Spendenformular*/
-
 #spendenTop {
   margin: 15px;
   display: flex;
 }
+
 .centerAlign {
   word-break: break-word;
   text-align: center;
@@ -18,6 +19,8 @@ main {
 p.centerAlign {
   font-size: 2rem;
 }
+
+/*linke Seite Spendeninfos*/
 
 #linkeSeite {
   display: flex;
@@ -28,12 +31,15 @@ p.centerAlign {
   margin-right: 5px;
   width: 60%
 }
+
 #infos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 70%;
 }
+
+/*Spendenformular*/
 #spendenformular {
   display: flex;
   flex-direction: column;
@@ -44,18 +50,22 @@ p.centerAlign {
   margin-left: 5px;
   padding: 3px;
 }
+
 #formular {
   display: flex;
   justify-content: center;
   padding-bottom: 2em;
 }
+
 input[type=text], input[type=submit],input[type=date], input[type=email], input[type=number] {
   border-radius: 6px;
 }
+
 input[type=text], input[type=date], input[type=email], input[type=number] {
   height: 1.5rem;
   width: 100%;
 }
+
 input[type=radio], input[type=radio] + label, input[type=submit]{
   cursor: pointer;
 }
@@ -112,6 +122,8 @@ fieldset {
   color: #fff;
   border-radius: 2em;
 }
+
+/*responives Layout (Breakpoints)*/
 
 @media only screen and (max-width: 800px) {
 /* For mobile phones: */

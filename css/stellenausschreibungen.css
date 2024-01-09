@@ -5,8 +5,8 @@ h1,h2,h3,p{
   hyphens: auto; 
   overflow-wrap: break-word; 
 }
-section, div {
-  border: 2px solid darkgreen;
+main section,main div {
+  border: 2px solid #004D26;
   border-radius: 6px;
   padding:8px;
   margin-bottom: 4px;
@@ -16,32 +16,46 @@ section, div {
   display: flex;
   flex-direction: column;
 } 
-@media screen and (min-width: 1000px) {
-  .flex {
-      flex-direction: row;
-  }
-}
+
   article {
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #004D26;
   display: flex;
   hyphens: auto; 
   overflow-wrap: break-word; 
   display: flex;
   flex-direction: column;
 } 
-@media screen and (min-width: 1000px) {
-  .flexborder {
-      border-bottom: none;
-      border-right: 2px solid darkgreen;
-      margin-right: 8px;
-  }
-}
+
 main {
   margin:8px;
   display: flex;
   flex-direction: column; 
   /*color: #000;*/
 }
+
 label{
   color: darkgreen;
+}
+
+textarea {
+  /* vertikale vergrößerung des Textfeldes */
+  resize: vertical; 
+  min-height: 75px;
+  max-height: 700px;
+}
+
+/*responsives Layout (Breakpoints)*/
+
+@media screen and (min-width: 1000px) {
+  .flex {
+      flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .flexborder {
+      border-bottom: none;
+      border-right: 2px solid #004D26;
+      margin-right: 8px;
+  }
 }

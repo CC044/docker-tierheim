@@ -4,6 +4,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 /*Style für Tierabgabeformular*/
@@ -72,6 +74,8 @@ aside img{
   object-fit: cover;
 
 }
+
+/*responives Layout (Breakpoints)*/
 
 @media only screen and (max-width: 1200px) {
   /* For mobile phones: */

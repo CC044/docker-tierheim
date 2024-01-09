@@ -21,7 +21,7 @@
       
       <img class="img" src="img/index/header.jpg" alt="Bild von drei Tieren" title="">
       
-        <p>Seit 19xx helfen, pflegen und vermitteln wir <a href="tiersteckbriefe.php?kategorie=hund">Hunde</a>, <a href="tiersteckbriefe.php?kategorie=katze">Katzen</a> und <a href="tiersteckbriefe.php?kategorie=kleintiere">Kleintiere</a>. Wir bieten Streunern aus der Region Trier und Umgebung ein Zuhause, sowie eine Chance auf ein besseres Leben. Unterstützen Sie unsere Mission, in dem Sie adoptieren, spenden oder sich als Freiwilliger Helfer engagieren. Gemeinsam können wir unseren Schützlingen eine bessere Zukunft bieten. Besuchen Sie uns gerne, um sich zu informieren, wie sie uns unterstützen können und Teil der Pfotenfreunde-Gemeinschaft werden können.</p>
+        <p>Seit 19xx helfen, pflegen und vermitteln wir <a href="tiersteckbriefe.php?kategorie=hunde">Hunde</a>, <a href="tiersteckbriefe.php?kategorie=katzen">Katzen</a> und <a href="tiersteckbriefe.php?kategorie=kleintiere">Kleintiere</a>. Wir bieten Streunern aus der Region Trier und Umgebung ein Zuhause, sowie eine Chance auf ein besseres Leben. Unterstützen Sie unsere Mission, in dem Sie adoptieren, spenden oder sich als Freiwilliger Helfer engagieren. Gemeinsam können wir unseren Schützlingen eine bessere Zukunft bieten. Besuchen Sie uns gerne, um sich zu informieren, wie sie uns unterstützen können und Teil der Pfotenfreunde-Gemeinschaft werden können.</p>
       <section>
         <h2>Ihre Spende hilft!</h2>
 

@@ -51,6 +51,8 @@ aside img {
   text-align: center;
 }
 
+/*responives Layout (Breakpoints)*/
+
 @media only screen and (max-width: 800px) {
 /* For mobile phones: */
   aside{

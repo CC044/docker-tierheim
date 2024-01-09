@@ -22,6 +22,7 @@
         <li id="tierabgabe.php"><a href="/tierabgabe.php">Tierabgabe</a></li>
         <li id="spenden.php"><a href="/spenden.php">Spenden</a></li>
         <li id="mitarbeiter.php"><a href="/mitarbeiter.php">Mitarbeiter</a></li>
+        <li id="stellenausschreibungen.php"><a href="/stellenausschreibungen.php">Stellenausschreibungen</a></li>
       </ul>
     </nav>
   HTML;

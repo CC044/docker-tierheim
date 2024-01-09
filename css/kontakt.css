@@ -1,8 +1,12 @@
 main{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
+
+/*rechte Seite*/
 
 #kontakt{
   display: flex;
@@ -50,3 +54,65 @@ main{
   flex-direction: row;
   justify-content: center;
 }
+
+/*linke Seite (Kontaktformular)*/
+
+textarea, input[type=text], input[type=email] {
+  height: 1.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical; /* vertikale vergrößerung des Textfeldes */
+  min-height: 300px;
+  max-height: 700px;
+}
+
+#kontaktFormular{
+  border: 3px solid #004d26;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 25%;
+}
+
+#formAndBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+h1{
+  overflow-wrap: break-word;
+  text-align: center;
+  hyphens: auto;
+}
+
+/*responives Layout (Breakpoints)*/
+
+@media only screen and (max-width: 1200px) {
+/* Für Smartphones */
+  main{
+    flex-direction: column-reverse;
+  }
+
+  #kontaktFormular{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  #formAndBtn{
+    padding: 1rem;
+  }
+}
+

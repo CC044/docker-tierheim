@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spendenstatus | Pfotenfreunde Trier</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <!--<link href="/css/spendeVerarbeiten.css" rel="stylesheet" type="text/css">-->
+    <link href="/css/spendeVerarbeiten.css" rel="stylesheet" type="text/css">
     <link rel="alternate icon" type="image/svg" href="/img/favicon.svg">
     <meta name="robots" content="nofollow">
     <meta name="description" content="Beschreibung der Webseite">
@@ -17,7 +17,8 @@
     ?>
 
     <main id="main">
-<?php
+
+  <?php
 
   $vorname = $nachname = $betrag = $zeitintervall = $iban = '';
 
@@ -70,7 +71,19 @@
       $line = fgets($fileRead);
       if(strlen($line) != 0){
         $currentDonator = explode(" ", $line);
-        $topDonator[$currentDonator[0] . " " . $currentDonator[1]] = $currentDonator[count($currentDonator)-1];
+        $topBetrag = 0;
+
+        // Überprüfung ob der Spender schon vorhanden ist
+        if(array_key_exists($currentDonator[0] . " " . $currentDonator[1], $topDonator)){
+          $topBetrag = $topDonator[$currentDonator[0] . " " . $currentDonator[1]];
+        }          
+
+        // Überprüfung ob der der aktuelle Betrag der höchste der bereits vorhandenen ist
+        if($topBetrag < $currentDonator[count($currentDonator)-1]){
+          $topBetrag = $currentDonator[count($currentDonator)-1];
+        }
+        
+        $topDonator[$currentDonator[0] . " " . $currentDonator[1]] = $topBetrag;
       } 
     }
   } else {
@@ -84,12 +97,14 @@
   echo '<h1>Top Spender</h1>';
 
   foreach($topDonator as $key => $value){
-      echo "Name: " . $key . ", Betrag: " . $value . "€<br>";
+      if(strlen($key) != 0){
+        echo "Name: " . $key . ", Betrag: " . $value . "€<br>";
+      }
   }
   
   echo '<br>
         <a class="btn" href="/spenden.php">Zurück zur Spendenseite</a>';
-?>
+  ?>
 
     </main>
     <?php

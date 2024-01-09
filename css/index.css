@@ -6,11 +6,11 @@ main {
   margin:8px;
   display: flex;
   flex-direction: column;
-  /*color: #000;*/
+  color: #000;
 }
 
 .link, main p a, main p a:link {
-  color: #004D26;
+  /*color: #004D26;*/
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
@@ -18,8 +18,8 @@ main {
   transition: color 650ms;
 }
 main a:focus, main a:hover, main a:active {
-  color: #00aa54;
-  will-change: color;
+  /*color: #00aa54;
+  will-change: color;*/
 }
 
 h1 em {
@@ -65,7 +65,7 @@ footer a {
   }
 }
 main img {
-  border: 4px solid darkgreen;
+  border: 4px solid #004D26;
   border-radius: 6px;
   height: auto;
 }

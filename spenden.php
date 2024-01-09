@@ -71,15 +71,15 @@
                 <legend>Bankdaten</legend>
                 <div>
                   <label for="iban">IBAN:</label>
-                  <input type="text" id="iban" name="iban" required="" minlength="22" maxlength="22" autocomplete="on">
+                  <input type="text" id="iban" name="iban" required="" minlength="22" maxlength="22" autocomplete="on" placeholder="DE11 0009 0009 1234 5678 90">
                 </div>
                 <div>
                   <label for="institut">Kreditinstitut:</label>
-                  <input type="text" id="institut" name="institut" required="" autocomplete="on">
+                  <input type="text" id="institut" name="institut" required autocomplete="on" placeholder="Sparkasse Vorderpfalz">
                 </div>
                 <div>
                    <label for="bic">BIC:</label>
-                  <input type="text" id="bic" name="bic" required="" minlength="8" maxlength="11" autocomplete="on">
+                  <input type="text" id="bic" name="bic" required minlength="8" maxlength="11" autocomplete="on" placeholder="QWEASDYX">
                 </div>           
               </fieldset>
           
@@ -88,30 +88,30 @@
                 <div class="parallel">
                   <div>
                     <label for="nachname">Nachname:</label>
-                    <input type="text" id="nachname" name="nachname" required=""  autocomplete="on" autocapitalize="on">
+                    <input type="text" id="nachname" name="nachname" required  autocomplete="on" autocapitalize="on" placeholder="Nachname">
                   </div>
                   <div>
                     <label for="vorname">Vorname:</label>
-                    <input type="text" id="vorname" name="vorname" required=""  autocomplete="on" autocapitalize="on">
+                    <input type="text" id="vorname" name="vorname" required  autocomplete="on" autocapitalize="on" placeholder="Vorname">
                   </div>
                 </div>
                  
                 <div class="parallel">
                   <div>
                     <label for="plz">PLZ:</label>
-                    <input type="number" id="plz" name="plz" min="10000" max="99999" required autocomplete="on">
+                    <input type="number" id="plz" name="plz" min="10000" max="99999" required autocomplete="on" placeholder="67923">
                   </div>
                   <div>
                     <label for="adresse">Adresse:</label>
-                    <input type="text" id="adresse" name="adresse" required="" autocomplete="on" autocapitalize="on">
+                    <input type="text" id="adresse" name="adresse" required autocomplete="on" autocapitalize="on" placeholder="Sonnenallee 3a">
                   </div>
                 </div>
                  
                 
                 <label for="geb">Geburtsdatum:</label>
-                <input type="date" id="geb" name="geb" required="" autocomplete="on">
+                <input type="date" id="geb" name="geb" required autocomplete="on">
                 <label for="mail">E-Mail:</label>
-                <input type="email" id="mail" name="mail" required="" autocomplete="on">
+                <input type="email" id="mail" name="mail" required autocomplete="on" placeholder="beispiel@email.de">
               </fieldset>
               <!--<label for="spendeSende">Jetzt Spenden</label>-->
               <input type="submit" id="spendeSenden" class="btn" name="SpendeSenden" value="Jetzt spenden">

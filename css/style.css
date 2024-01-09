@@ -28,18 +28,22 @@ footer a {
   text-decoration: underline solid currentColor 2px;
   color: #004d26;
   transition: color 650ms;
+  cursor: pointer;
 }
-header a:visited {
-  color: #70ffb8;
+main a:visited {
+  color: #518169;
 }
-main a:visited,
+header a:visited,
 footer a:visited {
-  color: #165f3b;
+  color: #87ffe4;
 }
 header a:focus, header a:hover, header a:active,
-main a:focus, main a:hover, main a:active,
-footer a:focus, footer a:hover, footer a:active{
-  color: #04ff80;
+footer a:focus, footer a:hover, footer a:active {
+  color: #61ffb0;
+  will-change: color;
+}
+main a:focus, main a:hover, main a:active {
+  color: #028744;
   will-change: color;
 }
 
@@ -111,7 +115,7 @@ nav ul {
 
 nav li {
   float: left;
-  width: 12em;
+  width: 14em;
 }
 
 nav li a {

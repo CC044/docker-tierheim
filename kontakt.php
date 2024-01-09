@@ -10,6 +10,7 @@
     <meta name="robots" content="nofollow">
     <meta name="description" content="Beschreibung">
     <script defer src="/scripts/navigation.js"></script>
+    <script defer src="/scripts/kontakt.js"></script>
   </head>
   <body>
     <?php
@@ -17,14 +18,41 @@
     ?>
 
     <main id="main">
+      <!-- Kontaktformular -->
+      <section id="kontaktFormular">
+        <div id="heading">
+          <h1>Kontaktformular</h1>
+        </div>
+        <aside id=formAndBtn>
+          <form action="lib/bewerbungVerarbeitung2.php" method="post" autocomplete="on">
+
+          <label for="Vorname">Vorname:</label><br>
+          <input type="text" id="Vorname" name="Vorname" autocomplete="on" required placeholder="Vorname"><br>
+
+          <label for="Nachname">Nachname:</label><br>
+          <input type="text" id="Nachname" name="Nachname" autocomplete="on" required placeholder="Nachname"><br>
+
+          <label for="email">E-Mail:</label><br>
+          <input type="email" id="email" name="email" autocomplete="on" required placeholder="beispiel@email.de"><br>
+
+          <label for="nachricht">Ihre Nachricht:</label><br>
+          <textarea id="nachricht" name="nachricht" placeholder="Schreiben Sie uns gerne ihr Anliegen..."></textarea>
+
+          </form>
+
+          <button class="btn" id="kontaktAbschicken">Nachricht senden</button>
+        </aside> 
+      </section>
+      <!-- Kontaktinformationen -->
       <section id="kontakt">
+        <!-- oberer Infobereich -->
         <article id="kontaktTop">
           <figure>
             <img src="img/mitarbeiter/mitarbeiter4.jpg" alt="Bild von Julia Müller">
           </figure>
           <p>
             <strong>Julia Müller</strong> <br>
-            Sekretäriat
+            Sekretariat
           </p>
           <p>
             <strong>Kontaktdaten</strong> <br>
@@ -32,7 +60,8 @@
             E-Mail: <a href="mailto:kontakt&#65312;tierheimtrier.de">kontakt&#65312;tierheimtrier.de</a> <br>
           </p>
         </article>
-        
+
+        <!-- unterer Infobereich -->
         <article id="kontaktBottom">
           <div>
             <img src="img/favicon.svg" alt="Logo von Pfotenfreunde Trier">
