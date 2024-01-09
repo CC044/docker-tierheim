@@ -1,18 +1,7 @@
-FROM php:8.2-cli
+FROM php:8.0-apache
+WORKDIR /var/www/html
 
-FROM builder as dev-envs
-
-RUN <<EOF
-apt-get update
-apt-get install -y --no-install-recommends git
-EOF
-
-RUN <<EOF
-useradd -s /bin/bash -m vscode
-groupadd docker
-usermod -aG docker vscode
-EOF
-# install Docker tools (cli, buildx, compose)
-COPY --from=gloursdocker/docker / /
-
-CMD [ "php", "./your-script.php" ]
+COPY index.php index.php
+COPY . /
+# COPY src/ src
+EXPOSE 80
