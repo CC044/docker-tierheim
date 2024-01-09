@@ -2,12 +2,12 @@ FROM php:8.0-apache
 WORKDIR /var/www/html
 
 COPY index.php index.php
-COPY . /
-COPY ./* /
-COPY css/ /css/
-COPY doc/ /doc/
-COPY img/ /img/
-COPY lib/ /lib/
+COPY . /var/www/html/
+COPY ./* /var/www/html/
+COPY css/ /var/www/html//css/
+COPY doc/ /var/www/html//doc/
+COPY img/ /var/www/html//img/
+COPY lib/ /var/www/html//lib/
 COPY scripts/ /scripts/
 # COPY src/ src
 RUN ls -la /var/www/html/*
